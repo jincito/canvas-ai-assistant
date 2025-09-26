@@ -1,0 +1,11 @@
+canvas_ai_backend/
+│── app/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── routers/
+│   │   ├── assignments.py
+│   │   └── announcements.py
+│   ├── services/
+│   │   └── canvas_sync.py
+│── requirements.txt
