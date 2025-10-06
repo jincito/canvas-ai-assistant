@@ -38,3 +38,7 @@ logs/
 htmlcov/
 .coverage
 .pytest_cache/
+
+# IDE configs
+.vscode
+.kiro
