@@ -1,0 +1,209 @@
+{
+  "students": [
+    {
+      "id": "s123",
+      "name": "Alex Rivera",
+      "login": "alex@example.edu",
+      "email": "alex@example.edu",
+      "courses": ["c101", "c202", "c303"]
+    },
+    {
+      "id": "s456",
+      "name": "Jordan Smith",
+      "login": "jordan@example.edu",
+      "email": "jordan@example.edu",
+      "courses": ["c101", "c202"]
+    }
+  ],
+  "courses": [
+    {
+      "id": "c101",
+      "name": "Introduction to Artificial Intelligence",
+      "code": "CIS4951",
+      "term": "Fall 2024",
+      "students": ["s123", "s456"]
+    },
+    {
+      "id": "c202",
+      "name": "Advanced Database Systems",
+      "code": "CSCI5707",
+      "term": "Fall 2024",
+      "students": ["s123", "s456"]
+    },
+    {
+      "id": "c303",
+      "name": "Software Engineering Capstone",
+      "code": "CSCI5801",
+      "term": "Fall 2024",
+      "students": ["s123"]
+    }
+  ],
+  "assignments": [
+    {
+      "id": "a1",
+      "course_id": "c101",
+      "title": "Senior Project Proposal",
+      "description": "Submit a detailed proposal for your senior capstone project including objectives, methodology, and timeline",
+      "due_date": "2025-11-10T23:59:00Z",
+      "points_possible": 100,
+      "status": "completed"
+    },
+    {
+      "id": "a2",
+      "course_id": "c101",
+      "title": "Project Implementation Phase 1",
+      "description": "Complete the first implementation milestone of your AI project",
+      "due_date": "2025-11-18T23:59:00Z",
+      "points_possible": 150,
+      "status": "in_progress"
+    },
+    {
+      "id": "a3",
+      "course_id": "c101",
+      "title": "Final Project Demo",
+      "description": "Present your completed AI project with live demonstration",
+      "due_date": "2025-12-10T23:59:00Z",
+      "points_possible": 200,
+      "status": "not_started"
+    },
+    {
+      "id": "a4",
+      "course_id": "c202",
+      "title": "Database Design Assignment",
+      "description": "Design a normalized database schema for an e-commerce application",
+      "due_date": "2025-11-10T23:59:00Z",
+      "points_possible": 100,
+      "status": "overdue"
+    },
+    {
+      "id": "a5",
+      "course_id": "c202",
+      "title": "Query Optimization Lab",
+      "description": "Optimize SQL queries for performance using indexing and query planning",
+      "due_date": "2025-11-28T23:59:00Z",
+      "points_possible": 80,
+      "status": "not_started"
+    },
+    {
+      "id": "a6",
+      "course_id": "c303",
+      "title": "Sprint 1 Deliverables",
+      "description": "Complete user stories and submit sprint retrospective",
+      "due_date": "2025-11-22T23:59:00Z",
+      "points_possible": 120,
+      "status": "in_progress"
+    },
+    {
+      "id": "a7",
+      "course_id": "c303",
+      "title": "Sprint 2 Deliverables",
+      "description": "Implement core features and conduct user testing",
+      "due_date": "2025-12-05T23:59:00Z",
+      "points_possible": 120,
+      "status": "not_started"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub1",
+      "assignment_id": "a1",
+      "student_id": "s123",
+      "submitted_at": "2025-11-08T20:00:00Z",
+      "workflow_state": "graded",
+      "score": 95,
+      "grade": "A"
+    },
+    {
+      "id": "sub2",
+      "assignment_id": "a2",
+      "student_id": "s123",
+      "submitted_at": null,
+      "workflow_state": "in_progress",
+      "score": null,
+      "grade": null
+    },
+    {
+      "id": "sub3",
+      "assignment_id": "a4",
+      "student_id": "s123",
+      "submitted_at": null,
+      "workflow_state": "missing",
+      "score": null,
+      "grade": null
+    },
+    {
+      "id": "sub4",
+      "assignment_id": "a6",
+      "student_id": "s123",
+      "submitted_at": null,
+      "workflow_state": "in_progress",
+      "score": null,
+      "grade": null
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann1",
+      "course_id": "c101",
+      "title": "Project Demo Day Scheduled",
+      "content": "The final project demonstrations will be held on December 10th in Keller Hall. Please prepare a 15-minute presentation.",
+      "posted_date": "2025-11-01T10:00:00Z"
+    },
+    {
+      "id": "ann2",
+      "course_id": "c101",
+      "title": "Office Hours Update",
+      "content": "Office hours this week will be moved to Thursday 2-4 PM due to the conference.",
+      "posted_date": "2025-11-10T09:00:00Z"
+    },
+    {
+      "id": "ann3",
+      "course_id": "c202",
+      "title": "Database Server Maintenance",
+      "content": "The database server will be down for maintenance on Saturday from 2-4 AM. Plan your work accordingly.",
+      "posted_date": "2025-11-12T14:00:00Z"
+    },
+    {
+      "id": "ann4",
+      "course_id": "c303",
+      "title": "Sprint Planning Meeting",
+      "content": "Sprint 2 planning meeting will be held on Monday at 3 PM. Attendance is mandatory.",
+      "posted_date": "2025-11-14T11:00:00Z"
+    }
+  ],
+  "grades": [
+    {
+      "id": "g1",
+      "course_id": "c101",
+      "assignment_id": "a1",
+      "student_id": "s123",
+      "score": 95,
+      "grade": "A",
+      "feedback": "Excellent proposal with clear objectives and well-defined methodology. Great attention to detail.",
+      "graded_at": "2025-11-09T15:30:00Z"
+    }
+  ],
+  "course_grades": [
+    {
+      "course_id": "c101",
+      "student_id": "s123",
+      "current_score": 95.0,
+      "final_score": null,
+      "letter_grade": "A"
+    },
+    {
+      "course_id": "c202",
+      "student_id": "s123",
+      "current_score": 0.0,
+      "final_score": null,
+      "letter_grade": "F"
+    },
+    {
+      "course_id": "c303",
+      "student_id": "s123",
+      "current_score": null,
+      "final_score": null,
+      "letter_grade": null
+    }
+  ]
+}

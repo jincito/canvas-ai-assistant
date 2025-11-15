@@ -47,8 +47,8 @@ Please follow the [PEP 8 style guide](https://www.python.org/dev/peps/pep-0008/)
 
 Before submitting a PR, make sure to:
 - Test your changes locally
-- Run the Flask server to ensure it starts without errors
-- Test API endpoints using Postman or curl
+- Run the MCP server to ensure it starts without errors
+- Test MCP tools with Claude Desktop or another MCP client
 
 ### Commit Message Format
 

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "canvas-ai-assistant": {
+      "command": "python3",
+      "args": [
+        "/absolute/path/to/canvas-ai-assistant/run_mcp_server.py"
+      ],
+      "env": {
+        "USE_MOCK_CANVAS": "true"
+      }
+    }
+  }
+}

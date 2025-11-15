@@ -12,11 +12,11 @@ The Canvas AI Assistant is designed as a modular system with four main layers:
   - Data validation and transformation
 
 ### 2. Backend Server & Database (MCP Server)
-- **Purpose**: Store synced data and provide API endpoints
+- **Purpose**: Store synced data and provide MCP tools for AI assistants
 - **Components**:
-  - Flask/FastAPI web server (`mcp_server/app.py`)
+  - MCP server (`mcp_server/mcp_app.py`)
   - PostgreSQL database
-  - REST API endpoints
+  - Model Context Protocol tools
   - Authentication and authorization
 
 ### 3. LLM & Logic Layer (AI Core)
@@ -66,9 +66,9 @@ The system uses SQLAlchemy ORM with the following core models:
 
 ## Technology Stack
 
-- **Backend**: Python 3.8+, Flask (currently implemented, FastAPI as alternative)
+- **Backend**: Python 3.8+, MCP (Model Context Protocol) server
 - **Database**: PostgreSQL with SQLAlchemy ORM (models implemented, integration in progress)
-- **LLM**: Google Gemini or Anthropic Claude (planned - currently using template responses)
+- **LLM**: Anthropic Claude via MCP protocol
 - **Development**: Virtual environment, pip package management
 - **Version Control**: Git with clean .gitignore for IDE and personal configurations
 - **Deployment**: Docker, Cloud hosting (planned)
@@ -77,19 +77,17 @@ The system uses SQLAlchemy ORM with the following core models:
 ## Current Implementation Status
 
 ### ✅ Completed Components
-- **Flask Web Server**: Basic REST API with JSON request/response handling
-- **Mock Data System**: Simulated Canvas data structure for development
-- **Query Processing**: Basic pattern matching and context retrieval
-- **API Endpoints**: `/api/ask`, `/api/health`, `/api/data` endpoints
+- **MCP Server**: Full Model Context Protocol implementation with 7 tools
+- **Mock Canvas Client**: High-fidelity mock implementation of Canvas API
+- **Mock Data System**: Comprehensive simulated Canvas data structure for development
 - **Development Environment**: Virtual environment setup with requirements.txt
 - **Database Models**: Complete SQLAlchemy models for courses, assignments, announcements, and grades
 - **Database Infrastructure**: Connection management, configuration, and migration system
 - **Database Setup Tools**: Automated database initialization and management scripts
 
 ### 🔄 In Progress Components
-- **Database Integration**: Connecting Flask API endpoints to PostgreSQL database
-- **Canvas API Client**: Authentication and data synchronization
-- **LLM Integration**: Gemini or Claude API integration
+- **Database Integration**: Connecting MCP tools to PostgreSQL database
+- **Real Canvas API Client**: Authentication and data synchronization
 - **Authentication System**: Secure token management
 - **Error Handling**: Comprehensive error responses and logging
 
